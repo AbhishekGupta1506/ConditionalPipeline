@@ -4,7 +4,7 @@ pipeline {
     stage('') {
       steps {
         sh '''#!/bin/sh
-              /*INPUT_STRING=hello
+              : ' INPUT_STRING=hello
               while [ "$INPUT_STRING" != "bye" ]
               do
                 echo "Please type something in (bye to quit)"
@@ -19,7 +19,7 @@ pipeline {
                   howdy) echo American ;;
                   *) echo unknown ;;
                 esac
-              done < myfile*/
+              done < myfile'
               i=0
               while :
               do
